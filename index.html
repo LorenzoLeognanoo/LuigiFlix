@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="pt-br" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Luigi Flix</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="shortcut icon" href="logos/L faviicon.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet">
+      <link rel="stylesheet" href="script.js">
+   </head>
+    
+   <body>
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            <img src="logos/logo LF.png" alt="" width="170" height="50">
+         </div>
+         
+         <center>
+         <div class="nav-items">
+            <li><a style="color: #dc1a28;" href="#">Início</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="filmes.html">Filmes</a></li>
+        </center>
+
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Pesquisar" required onkeyup="search()">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+    
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+
+      <center>
+      <div class="titulo-site">
+         <br><img src="logos/TOP.png">
+         <br><img style="height: 20px;" src="logos/sub-titulo.png">
+      </div>
+      </center>
+
+      <div class="cards" id="1 filme"> 
+         <div class="card card2">
+           <div class="container">
+             <img src="imgs/interestelar2.jpg" alt="las vegas" />
+           </div>
+           <div class="details">
+             <h3>Interestelar</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+             <p>
+               As reservas naturais da Terra estão chegando ao fim e um grupo de
+               astronautas recebe a missão de verificar possíveis planetas para
+               receberem a população mundial, possibilitando a continuação da
+               espécie. Cooper é chamado para liderar o grupo e aceita a missão
+               sabendo que pode nunca mais ver os filhos
+             </p>
+             <a href="https://play.hbomax.com/page/urn:hbo:page:GYGP7pwQv_ojDXAEAAAFc:type:feature?source=googleHBOMAX&action=open" target="_blank" class="button">Assistir</a>
+           </div>
+         </div>
+   
+         <div class="card card2" id="2 filme">
+           <div class="container">
+             <img src="imgs/oppenheimer.png" alt="Oppenheimer" />
+           </div>
+           <div class="details">
+             <h3>Oppenheimer</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1> 
+             <p>
+              O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.
+             </p>
+            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.1bfde9bc-06c4-472d-84e8-13e019fa34b1?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" class="button">Assistir</a>
+           </div>
+         </div>
+             
+           <div class="card card2" id="3 filme">
+             <div class="container">
+               <img src="imgs/poderoso chefão.jpeg" alt="O Poderoso Chefão" />
+             </div>
+             <div class="details">
+               <h3>O Poderoso Chefão</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+               <p>
+                A série de filmes The Godfather consiste em três filmes de drama e suspense policial dirigidos por Francis Ford Coppola com base no romance homônimo do ítalo-americano Mario Puzo. A trilogia narra as tramas envolvendo a Família Corleone, umas das mais poderosas famílias da Máfia italiana nos Estados Unidos.
+               </p>
+              <a     href="https://www.starplus.com/pt-br/movies/o-poderoso-chefao/3dd9XayT3S86" target="_blank" class="button">Assistir</a>
+             </div>
+           </div>
+   
+           <div class="card card2" id="4 filme">
+             <div class="container">
+               <img src="imgs/a espera de um milagre.png" alt="A espera de um milagre" />
+             </div>
+             <div class="details">
+               <h3>À Espera de um Milagre</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+               <p>
+                Um carcereiro tem um relacionamento incomum e comovente com um preso que está no corredor na morte: Coffey, um negro enorme, condenado por ter matado brutalmente duas gêmeas de nove anos. Ele tem tamanho e força para matar qualquer um, mas seu comportamento é completamente oposto à sua aparência.               </p>
+              <a href="https://www.primevideo.com/dp/amzn1.dv.gti.58a3ba5f-f6f9-4b10-9a10-678862b6b668?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" class="button">Assistir</a>
+             </div>
+           </div>
+   
+           <div class="card card2" id="5 filme">
+             <div class="container">
+               <img src="imgs/milagre na cela 7.jpg" alt="Milagre na Cela 7" />
+             </div>
+             <div class="details">
+               <h3>Milagre na Cela 7</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+               <p>
+                Memo, um pastor de ovelhas com deficiência mental, vive com sua filha e avó em uma vila na costa turca do mar Egeu. Um dia, sua vida é virada de cabeça para baixo quando a filha do comandante morre e Memo é acusado do assassinato e condenado à morte.
+               </p>
+              <a href="https://www.netflix.com/br/title/81239779?source=35" target="_blank" class="button">Assistir</a>
+             </div>
+           </div>
+   
+           <div class="card card2" id="6 filme">
+             <div class="container">
+               <img src="imgs/um sonho de liberdade.webp" alt="Um Sonho de Liberdade" />
+             </div>
+             <div class="details">
+               <h3>Um Sonho de Liberdade</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+               <p>
+                Andy Dufresne é condenado a duas prisões perpétuas consecutivas pelas mortes de sua esposa e de seu amante. Porém, só Andy sabe que ele não cometeu os crimes. No presídio, durante dezenove anos, ele faz amizade com Red, sofre as brutalidades da vida na cadeia, se adapta, ajuda os carcereiros, etc.
+               </p>
+              <a href="https://play.hbomax.com/page/urn:hbo:page:GX5NuhwXHx52ywgEAAAEP:type:feature?source=googleHBOMAX&action=open" target="_blank" class="button">Assistir</a>
+             </div>
+           </div>
+   
+           <div class="card card2" id="7 filme">
+             <div class="container">
+               <img src="imgs/homem aranha.jpg" alt="Homem-Aranha: Através do Aranhaverso" />
+             </div>
+             <div class="details">
+               <h3>Homem-Aranha: Através do Aranhaverso
+              </h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+               <p>
+                Depois de se reunir   com Gwen Stacy, Homem-Aranha é jogado no multiverso, onde ele encontra uma equipe encarregada de proteger sua própria existência.
+               </p>
+              <a href="https://play.hbomax.com/page/urn:hbo:page:GZS_zdAcKjrqspgEAABKH:type:feature?source=googleHBOMAX&action=open" target="_blank" class="button">Assistir</a>
+             </div>
+           </div>
+
+           <div class="card card2" id="8 filme">
+            <div class="container">
+              <img src="imgs/batman.jpg" alt="Batman: O Cavaleiro das Trevas" />
+            </div>
+            <div class="details">
+              <h3>Batman: O Cavaleiro das Trevas</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+              <p>
+                Batman tem conseguido manter a ordem em Gotham com a ajuda de Jim Gordon e Harvey Dent. No entanto, um jovem e anárquico criminoso, conhecido apenas como Coringa, pretende testar o Cavaleiro das Trevas e mergulhar a cidade em um verdadeiro caos.
+
+
+              </p>
+             <a href="https://play.hbomax.com/page/urn:hbo:page:GXdkpqAvyDaXCPQEAADdn:type:feature?source=googleHBOMAX&action=open" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="9 filme">
+            <div class="container">
+              <img src="imgs/coringa.jpg" alt="Coringa" />
+            </div>
+            <div class="details">
+              <h3>Coringa</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+              <p>
+                Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.
+
+
+              </p>
+             <a href="https://play.hbomax.com/feature/urn:hbo:feature:GYGOrjQfhvKCWowEAAAAE?source=googleHBOMAX&action=open" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+   
+          <div class="card card2" id="10 filme">
+            <div class="container">
+              <img src="imgs/clube da luta.jpg" alt="Clube da Luta" />
+            </div>
+            <div class="details">
+              <h3>Clube da Luta
+              </h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+              <p>
+                Um homem deprimido que sofre de insônia conhece um estranho vendedor chamado Tyler Durden
+                 e se vê morando em uma casa suja depois que seu perfeito apartamento é destruído. 
+                 A dupla forma um clube com regras rígidas onde homens lutam. A parceria perfeita é 
+                 comprometida quando uma mulher, Marla, atrai a atenção de Tyler.
+              </p>
+             <a href="https://www.netflix.com/watch/26004747?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+          <div class="card card2" id="11 filme - bonus">
+            <div class="container">
+              <img src="imgs/forrest-gump.jpg" alt="Forrest Gump" />
+            </div>
+            <div class="details">
+              <h3>Forrest Gump</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+              <p>
+                Mesmo com o raciocínio lento, Forrest Gump nunca se sentiu desfavorecido. Graças ao apoio da mãe, ele teve uma vida normal. 
+                Seja no campo de futebol como um astro do esporte, lutando no Vietnã ou como capitão de um barco de pesca de camarão, 
+                Forrest inspira a todos com seu otimismo.
+                 Mas a pessoa que Forrest mais ama pode ser a mais difícil de salvar: seu amor de infância, a doce e perturbada Jenny.
+              </p>
+             <a href="https://www.netflix.com/watch/60000724?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="12 filme - bonus">
+            <div class="container">
+              <img src="imgs/bastardos-inglorios.jpg" alt="Bastardos Inglórios" />
+            </div>
+            <div class="details">
+              <h3>Bastardos Inglórios</h3> <h1 class="categoria">Categoria: <b> Filme </b></h1>
+              <p>
+                Durante a Segunda Guerra Mundial, na França, judeus americanos espalham o terror entre o terceiro 
+                Reich. Ao mesmo tempo, Shosanna, uma judia que fugiu dos nazistas, planeja vingança quando um evento 
+                em seu cinema reunirá os líderes do partido
+              </p>
+             <a href="https://globoplay.globo.com/bastardos-inglorios/t/Jr1FP6zqzC/?origemId=91698" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="1 serie">
+            <div class="container">
+              <img src="imgs/breaking bad.jpg" alt="Breaking Bad - A Química do Mal" />
+            </div>
+            <div class="details">
+              <h3>Breaking Bad - A Química do Mal
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                O professor de química Walter White não acredita que sua vida possa piorar ainda mais. Quando descobre que tem câncer terminal, Walter decide arriscar tudo para ganhar dinheiro enquanto pode, transformando sua van em um laboratório de metanfetamina.
+              </p>
+             <a href="https://netflix.com/watch/70196252?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="2 serie">
+            <div class="container">
+              <img src="imgs/peaky blinders.avif" alt="Peaky Blinders
+              " />
+            </div>
+            <div class="details">
+              <h3>Peaky Blinders
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Uma notória gangue da Inglaterra de 1919 ascende no submundo liderada pelo cruel Tommy Shelby, um criminoso disposto a subir na vida a qualquer preço.
+
+
+
+              </p>
+             <a href="https://www.netflix.com/br/title/80002479?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="3 serie">
+            <div class="container">
+              <img src="imgs/better call saul.jpg" alt="Better Call Saul
+              " />
+            </div>
+            <div class="details">
+              <h3>Better Call Saul
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Jimmy McGill, também como conhecido como Saul Goodman, tenta ser um homem honesto e construir uma carreira de respeito. Mas há um lado seu que só quer aplicar golpes e se tornar um advogado picareta.
+              </p>
+             <a href="https://www.netflix.com/br/title/80021955?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="4 serie">
+            <div class="container">
+              <img src="imgs/stranger things.webp" alt="Stranger Things
+              " />
+            </div>
+            <div class="details">
+              <h3>Stranger Things
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Um grupo de amigos se envolve em uma série de eventos sobrenaturais na pacata cidade de Hawkins. Eles enfrentam criaturas monstruosas, agências secretas do governo e se aventuram em dimensões paralelas.
+              </p>
+             <a href="https://www.netflix.com/br/title/80057281?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="5 serie">
+            <div class="container">
+              <img src="imgs/rick and morty.jpg" alt="Rick And Morty
+              " />
+            </div>
+            <div class="details">
+              <h3>Rick And Morty
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Acompanhe malucas viagens no tempo-espaço e por universos paralelos com Rick, um cientista com problemas com a bebida, e seu neto Morty, um adolescente não tão brilhante quanto o avô.
+              </p>
+             <a href="https://play.hbomax.com/page/urn:hbo:page:GXkRjxwjR68PDwwEAABKJ:type:series?source=googleHBOMAX&action=open" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="6 serie">
+            <div class="container">
+              <img src="imgs/black mirror.webp" alt="Black Mirror
+              " />
+            </div>
+            <div class="details">
+              <h3>Black Mirror
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Contos de ficção científica que refletem o lado negro das telas e da tecnologia, mostrando que nem toda novidade traz só benefícios.
+              </p>
+             <a href="https://www.netflix.com/br/title/70264888?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="7 serie">
+            <div class="container">
+              <img src="imgs/narcos.png" alt="Narcos
+              " />
+            </div>
+            <div class="details">
+              <h3>Narcos
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Conheça a notória e infame história dos mais violentos cartéis de drogas da Colômbia.
+              </p>
+             <a href="https://www.netflix.com/br/title/80025172?source=35" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="8 serie">
+            <div class="container">
+              <img src="imgs/via a vis 2.jpg" alt="Vis a Vis
+              " />
+            </div>
+            <div class="details">
+              <h3>Vis a Vis
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Manipulada pelo homem por quem se apaixonou, Macarena comete um crime e é condenada à prisão. Assim, ela precisa aprender a sobreviver em um novo e violento mundo.
+              </p>
+             <a href="https://www.netflix.com/br/title/80059465" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="10 serie">
+            <div class="container">
+              <img src="imgs/prison break.jpg" alt="Prison Break: Em Busca da Verdade
+              " />
+            </div>
+            <div class="details">
+              <h3>Prison Break: Em Busca da Verdade
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Michael Scofield é um homem desesperado em uma situação desesperada. Seu irmão, Lincoln Burrows, foi condenado por um crime que não cometeu e colocado no corredor da morte. Michael rende um banco para conseguir ser encarcerado junto ao irmão na penitenciária estadual de Fox River e coloca em ação uma série de planos elaborados para permitir a fuga de Lincoln e provar sua inocência.
+              </p>
+             <a href="https://www.starplus.com/pt-br/series/prison-break/7O2SFMVATNe5?distributionPartner=google" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="10 serie">
+            <div class="container">
+              <img src="imgs/ted lasso.png" alt="Ted Lasso" />
+            </div>
+            <div class="details">
+              <h3>Ted Lasso
+              </h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                Ted Lasso é uma série de televisão de comédia estadunidense desenvolvida por Bill Lawrence, Jason Sudeikis, Joe Kelly e Brendan Hunt, baseada em um personagem de mesmo nome que Sudeikis interpretou pela primeira vez em uma série de comerciais para a cobertura da NBC Sports da Premier League.
+              </p>
+             <a href="https://tv.apple.com/br/episode/pilot/umc.cmc.zb0yksqtym68hasbq8mj4jwp?action=playSmartEpisode" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="11 serie - bonus">
+            <div class="container">
+              <img src="imgs/bonus.png" alt="Coringa" />
+            </div>
+            <div class="details">
+              <h3>SERIE BÔNUS</h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                SERIE BÔNUS
+              </p>
+             <a href="#" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+
+          <div class="card card2" id="12 serie - bonus">
+            <div class="container">
+              <img src="imgs/bonus.png" alt="SERIE BÔNUS" />
+            </div>
+            <div class="details">
+              <h3>SERIE BÔNUS</h3> <h1 class="categoria">Categoria: <b> Série </b></h1>
+              <p>
+                SERIE BÔNUS
+              </p>
+             <a href="#" target="_blank" class="button">Assistir</a>
+            </div>
+          </div>
+          </div>
+          
+       <br>
+       <center> 
+       <footer>
+        <p style="font-size: 20px; line-height: 80px; color: white;" > Direitos autorais &copy; 2024 LUIGI FLIX </p>
+    </footer>
+    </center>
+   </body>
+</html>
